@@ -1,0 +1,41 @@
+/*estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0, 0, 0);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+/*estilos de las estrellas*/
+.estrellas{
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+.estrellas  input{
+    display: none;
+}
+.estrellas  label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.5s;
+}
+
+input ~ label:hover,
+input ~ label:hover ~ label{
+    color: #fd4;
+}
+input:checked ~label{
+    color: #fd4; 
+}
+input#puntos-1:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
